@@ -1,0 +1,79 @@
+.block{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: block;
+	background-color: #1D73A2; /*#254F98;#4295C3;*/
+	width: 300px;
+	height: 340px;
+	margin-top: 30px;
+	border-radius: 12px;
+}
+
+	.block p{
+		color: white;
+	}
+	.block h2{
+		color: white;
+		margin-left: 20px;
+		padding-top: 20px;
+	}
+.so-count{
+	color: white;
+	display: block;
+	width: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 160px;
+	margin-top: 90px;
+	height: 95px;
+}
+.day-header{
+	border-bottom-color: #4FBAEC;
+	border-bottom-style: solid;
+}
+.button-holder{
+	width: 300px;
+	height:100px;
+}
+.supply-block{
+	width: 50px;
+	height:50px;
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	float: left;
+}
+.btn-clearer{
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	font-size: 28px; 
+	margin-top: 10px;
+}
+.home-selected{
+	position: absolute;
+	top: 6px;
+	left: -20px;
+	color: white;
+}
+.mykits-selected{
+	position: absolute;
+	top: 255px;
+	right: 132px;
+	color: #FFF;
+}
+.status-selected{
+	position: absolute;
+	top: 334px;
+	right: 132px;
+	color: #FFF;
+}
+.badge-count{
+	position: absolute !important;
+	left: 114px;
+	top: 240px;
+	padding: 7px;
+	font-size: 11px;
+	background-color: rgb(29, 115, 162);
+	z-index: -2;
+}
