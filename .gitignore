@@ -2,6 +2,7 @@ kits.json
 index2.html
 bin/replace
 node_modules
+static/js/bundle.js
 
 # docker
 .bash_history

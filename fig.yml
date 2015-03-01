@@ -2,7 +2,6 @@ app:
   build: ./docker/dockerfile-app
   volumes:
    - .:/home/developer
-  command: npm run watch
 
 nginx:
   build: .

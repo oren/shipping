@@ -1,6 +1,6 @@
 # Shipping app
 
-## Development
+## Setup the project
 
 Install fig - http://www.fig.sh/install.html
 
