@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run watch-css & npm run watch-js & npm run server",
-    "server": "node app/index.js",
-    "bundle-css": "./node_modules/.bin/stylus ./app/styles/index.styl -o ./app/assets/css",
-    "watch-css": "./node_modules/.bin/stylus -w ./app/styles -o ./app/assets/css",
-    "bundle-js": "./node_modules/.bin/browserify ./main.js > ./static/bundle.js",
-    "watch-js": "./node_modules/.bin/watchify ./main.js -o ./static/bundle.js"
+    "start": "chromium static/html/index.html",
+    "build": "browserify static/js/main.js | uglifyjs > static/js/bundle.js",
+    "watch": "watchify static/js/main.js -o static/js/bundle.js -dv"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "uglify-js": "^2.4.16",
+    "watchify": "^2.4.0"
+  },
+  "dependencies": {
+    "mithril": "^0.1.30"
+  }
 }
