@@ -1,4 +1,11 @@
 app:
-  build: .
+  build: ./docker/dockerfile-app
   volumes:
    - .:/home/developer
+
+nginx:
+  build: ./docker/dockerfile-nginx
+  volumes:
+   - ./static:/user/share/nginx/html
+  ports:
+   - "3000:3000"
